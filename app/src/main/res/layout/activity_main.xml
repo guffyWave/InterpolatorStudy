@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:src="@mipmap/ic_launcher" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/buttonAccelerateDeaccelerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="accelerateDeaccelerate"
+            android:text="Accelerate Deaccelerate" />
+
+
+        <Button
+            android:id="@+id/buttonAccelerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="accelerate"
+            android:text="Accelerate" />
+
+
+        <Button
+            android:id="@+id/buttonAnticipate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="anticipate"
+            android:text="Anticipate" />
+
+        <Button
+            android:id="@+id/buttonAnticipateOverShoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="anticipateOvershoot"
+            android:text="Anticipate Overshoot" />
+
+
+        <Button
+            android:id="@+id/buttonBounce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="bounce"
+            android:text="Bounce" />
+
+        <Button
+            android:id="@+id/buttonCycle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="cycle"
+            android:text="Cycle" />
+
+        <Button
+            android:id="@+id/buttonDeaccelerate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="deaccelerate"
+            android:text="Deaccelerate" />
+
+        <Button
+            android:id="@+id/buttonLinear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="linear"
+            android:text="Linear" />
+
+
+        <Button
+            android:id="@+id/buttonOvershoot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="overshoot"
+            android:text="Overshoot" />
+
+
+    </LinearLayout>
+</LinearLayout>
